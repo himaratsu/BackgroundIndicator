@@ -10,4 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic) NSMutableData *receiveData;
+@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
+@property (weak, nonatomic) IBOutlet UILabel *perLabel;
+
+- (IBAction)startNetworkConnection:(id)sender;
+
 @end
